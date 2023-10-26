@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+     background-color: black;
+     color: #f6f6f6;
+
+    }
+
+.cabeçalho{ 
+    padding: 2% 0 0 15%;
+}
+
+.cabeçalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabeçalho__menu-link{ 
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22D4FD;
+}
+
+
+.titulo-destaque{ 
+    color:#22D4FD ;
+}
+
+.container__principal{ 
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.container__principal--conteudo{ 
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo{
+     font-size:2.25rem;
+     font-family: "Krona One";
+}
+
+.paragrafo{
+     font-size: 1.5rem;
+     font-family: "Montserrat";
+}
+
+.botoes{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+
+.titulo__subtitulo{ 
+    font-family: "Krona One";
+    font-weight: 400;
+}
+
+.botoes__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    color: #f6f6f6;
+    width: 378px;
+    border-radius: 8px;
+    padding: 21px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    
+}
+
+.botoes__link:hover{
+    background-color: #272727;
+}
+
+.rodape{
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+
+.imagem__vinho{
+    width: 45%;
+}
+
+@media (max-width:1200px) {
+
+    .cabeçalho{
+     padding: 10%;
+    }
+
+    .cabeçalho__menu{
+        justify-content: center;
+        
+    }
+    
+
+    .container__principal {
+        flex-direction: column-reverse;
+        padding: 0% 0 5% 0;
+    }
+    .container__principal--conteudo{
+        width: 100%;
+    }
+ 
+    .imagem__vinho{
+        padding: 100px;
+        width: 60%;
+    }
+}
+
+
